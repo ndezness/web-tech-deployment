@@ -27,6 +27,24 @@
     });
   }
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navLinks = document.querySelectorAll("#nav-links a");
+
+    navLinks.forEach(link => {
+      const linkHref = link.getAttribute("href");
+
+      // Only check full-page links (not section anchors like #hero)
+      if (!linkHref.startsWith("#")) {
+        const linkPage = linkHref.split("/").pop();
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      }
+    });
+  });
+</script>
 <body>
 
     <header>
