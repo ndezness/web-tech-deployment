@@ -6,7 +6,27 @@
   <title>Royal Rinse - Car Wash</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
+<script>
+  
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
 <body>
 
   <header>
@@ -16,60 +36,63 @@
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <nav id="nav-links">
       <a href="#hero">Home</a>
-      <a href="#About">About Us</a>
+      <a href="#whatdo">What We Do</a>
+      <a href="about_us.html">About Us</a>
       <a href="#services">Services</a>
       <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
+      <a href="contact_us.html">Contact</a>
     </nav>
   </header>
 
-<section class="hero" id="hero">
-  <div class="hero-container">
-    <div class="hero-content">
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
       <h1>Royal Rinse Car Wash</h1>
       <p>Keep your ride spotless and shining with eco-friendly and professional care.</p>
       <a href="#booking" class="hero-btn">Book Now</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="about-us" id="about">
-    <div class="about-container">
-    <div class="about-text">
-      <h2>About Royal Rinse Car Wash</h2>
+  <section class="whatdo" id="whatdo">
+    <div class="whatdo-container">
+    <div class="whatdo-text">
+      <h2>What We Do</h2>
       <p>
-        At ShinyRide, we don’t just wash cars — we pamper them. With eco-friendly products,
-        experienced staff, and a passion for perfection, we make sure every car leaves looking brand new.
-        Whether it’s a quick wash or a full detail, your car is in good hands.
+        At Royal Rinse Car Wash, we go beyond the basics to bring your vehicle the care it truly deserves. Our team specializes in comprehensive car detailing, meticulously restoring and protecting every surface inside and out. From exterior hand washes and interior deep vacuuming to precision waxing and polishing, we treat every car like royalty.
       </p>
-    <div class="about-features">
-    </div>
-    <div class="about-features">
-      <div class="feature-box">
-                <h4>Eco-Friendly</h4>
-        <p>We use biodegradable soaps and water-saving techniques.</p>
-      </div>
-      <div class="feature-box">
-               <h4>Fast & Reliable</h4>
-        <p>Get in and out in under 30 minutes, guaranteed!</p>
-      </div>
-      <div class="feature-box">
-               <h4>Expert Care</h4>
-        <p>Handled by trained professionals who care about your car.</p>
-      </div>
-    </div>
-  </div>
-</section>.
+      
+      <div style="height: 2rem;"></div>
 
-<section class="services" id="services">
-  <div class="services-container">
-    <h2 class="section-title">Our Services</h2>
-    <p class="section-subtitle">Premium car care at unbeatable prices.</p>
-    <div class="service-cards">
-      <div class="service-card">
-        
-        <h3>Exterior Wash</h3>
+    <div class="whatdo-features">
+    </div>
+      <div class="whatdo-features">
+        <div class="feature-box">
+           <h4>Maintenance Services</h4>
+            <p>We  offer essential maintenance services to keep you safe and on the road, including oil changes, brake checks, and fluid top-ups. </p>
+      </div>
+      <div class="feature-box">
+        <h4>Cosmetic Care</h4>
+        <p>Our body work services help repair scratches, dents, and other imperfections to keep your vehicle looking its best</p>
+      </div>
+      <div class="feature-box">
+               <h4>Guaranteed Satisfaction</h4>
+        <p>Whether you're here for a quick refresh or a full detail, we’re committed to quality, consistency, and customer satisfaction.</p>
+        </div>
+        <p>Because your car deserves the royal treatment!</p>
+        </div>
+    </div>
+  </section>.
+
+  <section class="services" id="services">
+    <div class="services-container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Premium car care at unbeatable prices.</p>
+      <div class="service-cards">
+        <div class="service-card">
+          
+          <h3>Exterior Wash</h3>
         <p>High-pressure rinse, foam bath, and spotless drying for a shiny finish.</p>
       </div>
             <div class="service-card">
@@ -80,12 +103,12 @@
 
       <div class="service-card">
           <h3>Full Detail</h3>
-        <p>Complete inside-out cleaning, polishing, and protection for your ride.</p>
+          <p>Complete inside-out cleaning, polishing, and protection for your ride.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="pricing" id="pricing">
+  </section>
+  <section class="pricing" id="pricing">
   <div class="pricing-container">
     <h2 class="section-title">Pricing Plans</h2>
     <p class="section-subtitle">Choose the perfect plan for your car</p>
@@ -125,14 +148,14 @@
           <li>Fragrance + Tire Protection</li>
         </ul>
         <a href="#contact" class="btn">Choose Plan</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-<section class="testimonials" id="testimonials">
-  <div class="testimonials-container">
-    <h2 class="section-title">What Our Customers Say</h2>
-    <p class="section-subtitle">Real feedback from happy drivers</p>
+  </section>
+  <section class="testimonials" id="testimonials">
+    <div class="testimonials-container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Real feedback from happy drivers</p>
 
     <div class="testimonial-cards">
       <div class="testimonial-card">
@@ -159,34 +182,34 @@
         </div>
       </div>
 
-      <div class="testimonial-card">
-        <p class="quote">""Mi come fi mi regular wash, but mi did get di deluxe treatment! Dem wash mi car inside an' out, mi even feel like mi car get a spa day! Yuh see mi ride now? It a glow fi days! Mi cya drive tru di neighborhood an' everyone a look at mi. Big up Royal Rinse, yuh mek mi feel special!"
+        <div class="testimonial-card">
+          <p class="quote">""Mi come fi mi regular wash, but mi did get di deluxe treatment! Dem wash mi car inside an' out, mi even feel like mi car get a spa day! Yuh see mi ride now? It a glow fi days! Mi cya drive tru di neighborhood an' everyone a look at mi. Big up Royal Rinse, yuh mek mi feel special!"
 
-        </p>
-        <div class="user">
-          
-          <div>
-            <h4> Shanice 'Sunshine' Williams</h4>
-            <span>Toyota RAV4</span>
+          </p>
+          <div class="user">
+            
+            <div>
+              <h4> Shanice 'Sunshine' Williams</h4>
+              <span>Toyota RAV4</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="promo-section" id="promo">
-  <div class="promo-container">
-    <div class="promo-text">
-      <h2>Get 20% Off Your First Wash!</h2>
-      <p>Experience the shine and care your car deserves. Book now and enjoy a spotless finish at a special price.</p>
-      <a href="#contact" class="promo-btn">Claim Offer</a>
+  </section>
+  <section class="promo-section" id="promo">
+    <div class="promo-container">
+      <div class="promo-text">
+        <h2>Get 20% Off Your First Wash!</h2>
+        <p>Experience the shine and care your car deserves. Book now and enjoy a spotless finish at a special price.</p>
+        <a href="contact_us.html" class="promo-btn">Claim Offer</a>
+      </div>
+      <div class="promo-image">
+        
+      </div>
     </div>
-    <div class="promo-image">
-      
-    </div>
-  </div>
-</section>
-<section class="booking" id="booking">
+  </section>
+  <section class="booking" id="booking">
   <div class="booking-container">
     <h2 class="section-title">Book Your Wash</h2>
     <p class="section-subtitle">Quick. Easy. Sparkling clean.</p>
@@ -212,11 +235,16 @@
       <button type="submit" class="booking-btn">Book Now</button>
     </form>
   </div>
-</section>
+  </section>
+  <button id="backToTopBtn" onclick="scrollToTop()">⬆</button>
+
+</body>
+
 <footer class="footer">
   <div class="footer-container">
     <!-- Logo & Description -->
     <div class="footer-col">
+      <img src="images/car wash logo.png" alt="car wash logo" height="90px">
       <h3 class="footer-logo">Royal Rinse Car Wash</h3>
       <p>Bringing brilliance to your vehicle. Trusted car wash services with premium care.</p>
     </div>
@@ -225,8 +253,9 @@
     <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
         <li><a href="#booking">Book Now</a></li>
@@ -236,7 +265,7 @@
     <!-- Contact Info -->
     <div class="footer-col">
       <h4>Contact Us</h4>
-      <p>1224 Lady Musgarve RD, kng 10 Jamaica </p>
+      <p>1224 Lady Musgarve Rd, kng 10 Jamaica </p>
       <p>Email: info@RRCW.com</p>
       <p>Phone: (876) 456-0000</p>
       <div class="social-icons">
@@ -263,6 +292,6 @@
     }
   </script>
 
-</body>
+
 </html>
 

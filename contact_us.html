@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Royal Rinse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<script>
+  
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+<body>
+
+    <header>
+      <div class="logo">
+       <img src="images/car wash logo.png" alt="car wash logo">
+      </div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about_us.html">About Us</a>
+          <a href="contact_us.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="in_touch">
+      <div class="in_touch-container">
+        <div class="in_touch-text">
+          <h2>Get In Touch</h2>
+          <p>
+            Have a question, need a customer service, or just want to give appreciation for the care? We'd love to hear from you!
+          </p>
+          <div style="height: 2rem;"></div>
+        </div>
+      </div> 
+    </div>
+
+<section class="contact-columns">
+  <div class="contact-card">
+    <h3>Business Inquiries</h3>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Phone Number" required />
+      <input type="text" placeholder="Company Affiliation" />
+      <input type="text" placeholder="Notes" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="contact-card">
+    <h3>Customer Inquiries</h3>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Phone Number" required />
+      <input type="text" placeholder="Company Affiliation" />
+      <input type="text" placeholder="Notes" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="contact-card">
+    <h3>Advertising Inquiries</h3>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Phone Number" required />
+      <input type="text" placeholder="Company Affiliation" />
+      <input type="text" placeholder="Notes" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+<section class="contact-section">
+  <div class="section-container contact-grid">
+
+    <div class="contact-col">
+      <h3>Contact Info</h3>
+      <p>Email: info@rrcw.com</p>
+      <p>Phone: (876)456-0000</p>
+      <p>Location: 1224 Lady Musgrave Rd. Kingston 10, Jamaica</p>
+    </div>
+
+    <div class="contact-col">
+      <h3>Operating Hours</h3>
+      <p>Mon – Sat: 8:00 AM – 6:00 PM</p>
+      <p>Sunday: Closed</p>
+    </div>
+
+    <div class="contact-col">
+      <h3>Connect With Us</h3>
+      <p><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></p>
+      <p><a href="#"><i class="fab fa-instagram"></i> Instagram</a></p>
+      <p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p>
+    </div>
+
+  </div>
+  <button id="backToTopBtn" onclick="scrollToTop()">⬆</button>
+</body>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo & Description -->
+    <div class="footer-col">
+      <img src="images/car wash logo.png" alt="car wash logo" height="90px">
+      <h3 class="footer-logo">Royal Rinse Car Wash</h3>
+      <p>Bringing brilliance to your vehicle. Trusted car wash services with premium care.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact_us.html">Contact US</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>1224 Lady Musgarve Rd, kng 10 Jamaica </p>
+      <p>Email: info@RRCW.com</p>
+      <p>Phone: (876) 456-0000</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Royal Rinse car wash. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Font Awesome for social icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-links').classList.toggle('active');
+    }
+  </script>
