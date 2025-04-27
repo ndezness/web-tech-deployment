@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Royal Rinse - Car Wash</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<script>
+  
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+  
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+<body>
+<header>
+    <div class="logo">
+     <img src="images/car wash logo.png" alt="car wash logo">
+  </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about_us.html">About Us</a>
+      <a href="contact_us.html">Contact</a>
+      <a href="review.html">Review</a>
+    </nav>
+  </header>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+      const navLinks = document.querySelectorAll("#nav-links a");
+  
+      navLinks.forEach(link => {
+        const linkHref = link.getAttribute("href");
+  
+        // Only check full-page links (not section anchors like #hero)
+        if (!linkHref.startsWith("#")) {
+          const linkPage = linkHref.split("/").pop();
+          if (linkPage === currentPage) {
+            link.classList.add("active");
+          }
+        }
+      });
+    });
+  </script>
+<section class="testimonials" id="testimonials">
+    <div class="testimonials-container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-subtitle">Real feedback from happy drivers</p>
+
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p class="quote">"My car has never looked so clean since I bought it! The wash was top-notch—every spot was cleaned, even the rims were shining like diamonds! You can tell they took their time with the work. I would recommend them to anyone, your car will never look better!""</p>
+        <div class="user">
+          
+          <div>
+            <h4>Dwayne 'DaShine' Brown</h4>
+            <span>Honda Civic</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="quote">"My car needed some serious cleaning after the rain and all the dirt. My friend told me about Royal Rinse, so I checked them out. They washed my car and I could not believe the difference! My car was clean from top to bottom,they even freshened up the leather seats. This is the best service I have ever received. I am definitely telling my family and friends about this place!"
+
+        </p>
+        <div class="user">
+          
+          <div>
+            <h4>Carlos 'Chico' McFarlane.</h4>
+            <span>BMW 3 Series</span>
+          </div>
+        </div>
+      </div>
+
+        <div class="testimonial-card">
+          <p class="quote">"I came in for my regular wash, but I ended up getting the deluxe treatment! They cleaned my car inside and out. It honestly felt like my car had a spa day! You should see my ride now, it have been glowing for days! I can't drive through the neighborhood without everyone looking at me. Big shoutout to Royal Rinse, you really made me feel special!"
+
+
+
+          </p>
+          <div class="user">
+            
+            <div>
+              <h4> Shanice 'Sunshine' Williams</h4>
+              <span>Toyota RAV4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="review" id="review">
+    <div class="review-container">
+      <h3 class="section-title">Add Review</h3>
+      <p class="section-subtitle">How Was Our Service?</p>
+      
+      <form class="review-form">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name (e.g. Ricardo 'Ricky' Grey )" required>
+            <input type="text" name="vehicle" placeholder="Vehicle Type (e.g. Sedan, SUV)" required>
+        </div>
+  
+        
+        <textarea name="review" rows="10" placeholder="Your Review"></textarea>
+  
+        <button type="submit" class="review-btn">Submit Review</button>
+      </form>
+    </div>
+    </section>
+    <button id="backToTopBtn" onclick="scrollToTop()">⬆</button>
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+      <!-- Logo & Description -->
+      <div class="footer-col">
+        <img src="images/car wash logo.png" alt="car wash logo" height="90px">
+        <h3 class="footer-logo">Royal Rinse Car Wash</h3>
+        <p>Bringing brilliance to your vehicle. Trusted car wash services with premium care.</p>
+      </div>
+  
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="review.html">Review</a></li>
+          <li><a href="#booking">Book Now</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>1224 Lady Musgarve Rd, kng 10 Jamaica </p>
+        <p>Email: info@RRCW.com</p>
+        <p>Phone: (876) 456-0000</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Royal Rinse car wash. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  
+  
+    <script>
+      function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('active');
+      }
+    </script>
+
+</html>
