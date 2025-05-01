@@ -710,6 +710,30 @@ textarea {
   background-color: var(--highlight-color);
 }
 
+.review {
+  background-color: #e9f1fb;
+  color: #222222;
+  padding: 60px 20px;
+  text-align: center;
+}
+.review-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.review-btn {
+  background-color:  #004aad; 
+  color: var(--text-light);
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.review-btn:hover {
+  background-color:#186fe1;
+}
+
 @media (max-width: 600px) {
   .form-group {
     flex-direction: column;
