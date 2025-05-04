@@ -6,7 +6,7 @@
   --text-dark: #111111;          /* Rich Black */
   --highlight-color: #b08d57;
   --secondary-color2: #3e2723;
-
+}
   
   
 body {
@@ -555,7 +555,7 @@ nav a:hover {
 html {
   scroll-behavior: smooth;
 }
-}
+
 
 .user h4 {
   margin: 0;
