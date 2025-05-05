@@ -34,7 +34,6 @@
     navLinks.forEach(link => {
       const linkHref = link.getAttribute("href");
 
-      // Only check full-page links (not section anchors like #hero)
       if (!linkHref.startsWith("#")) {
         const linkPage = linkHref.split("/").pop();
         if (linkPage === currentPage) {
@@ -151,6 +150,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="about_us.html">About Us</a></li>
         <li><a href="contact_us.html">Contact US</a></li>
+        <li><a href="review.html">Review</a></li>
       </ul>
     </div>
 
